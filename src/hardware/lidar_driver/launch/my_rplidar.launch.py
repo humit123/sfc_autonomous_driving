@@ -5,15 +5,18 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='rplidar_ros',
-            executable='rplidar_composition',
+            executable='rplidar_node',
             name='rplidar_node',
             output='screen',
             parameters=[{
+                'channel_type': 'serial',
                 'serial_port': '/dev/ttyUSB0',
-                'serial_baudrate': 256000,
-                'frame_id': 'laser_frame',
+                'serial_baudrate': 1000000,
+                'frame_id': 'laser',
                 'inverted': False,
                 'angle_compensate': True,
+                'scan_mode': 'DenseBoost'
             }]
         )
     ])
+
