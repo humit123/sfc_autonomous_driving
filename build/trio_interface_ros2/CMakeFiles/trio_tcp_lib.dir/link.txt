@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtrio_tcp_lib.a CMakeFiles/trio_tcp_lib.dir/src/cmd_trio_motion_node.cpp.o CMakeFiles/trio_tcp_lib.dir/src/cmd_trio_motion_tcp.cpp.o CMakeFiles/trio_tcp_lib.dir/src/fsm_trio_motion_node.cpp.o CMakeFiles/trio_tcp_lib.dir/src/fsm_trio_motion_tcp.cpp.o
+/usr/bin/ranlib libtrio_tcp_lib.a

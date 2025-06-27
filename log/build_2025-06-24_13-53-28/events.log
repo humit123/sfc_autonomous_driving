@@ -1,0 +1,386 @@
+[0.000000] (-) TimerEvent: {}
+[0.001041] (lidar_driver) JobQueued: {'identifier': 'lidar_driver', 'dependencies': OrderedDict()}
+[0.001310] (trio_interface_ros2) JobQueued: {'identifier': 'trio_interface_ros2', 'dependencies': OrderedDict()}
+[0.001537] (lidar_driver) JobStarted: {'identifier': 'lidar_driver'}
+[0.012819] (trio_interface_ros2) JobStarted: {'identifier': 'trio_interface_ros2'}
+[0.021723] (lidar_driver) JobProgress: {'identifier': 'lidar_driver', 'progress': 'cmake'}
+[0.022589] (lidar_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/msg1907/autonomous_driving_ws/src/hardware/lidar_driver', '-DCMAKE_INSTALL_PREFIX=/home/msg1907/autonomous_driving_ws/install'], 'cwd': '/home/msg1907/autonomous_driving_ws/build/lidar_driver', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'msg1907'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/msg1907/ros2_ws/install/my_cartographer/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/msg1907/ros2_ws/install/cartographer_ros/lib:/home/msg1907/ros2_ws/install/cartographer_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('HOME', '/home/msg1907'), ('OLDPWD', '/home/msg1907'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '2287'), ('SYSTEMD_EXEC_PID', '2456'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3011'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/msg1907/autonomous_driving_ws/install:/home/msg1907/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'msg1907'), ('JOURNAL_STREAM', '8:48061'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/msg1907/ros2_ws/install/my_cartographer/lib/aarch64-linux-gnu/pkgconfig:/home/msg1907/ros2_ws/install/my_cartographer/lib/pkgconfig:/home/msg1907/ros2_ws/install/cartographer/lib/aarch64-linux-gnu/pkgconfig:/home/msg1907/ros2_ws/install/cartographer/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'msg1907'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/msg1907/ros2_ws/install/cartographer/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/msg1907/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2432,unix/ubuntu:/tmp/.ICE-unix/2432'), ('INVOCATION_ID', 'f757a062dd2c4346afaa0b765ce1e4df'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/msg1907/autonomous_driving_ws/install:/home/msg1907/ros2_ws/install/rplidar_ros:/home/msg1907/ros2_ws/install/cartographer_ros:/home/msg1907/ros2_ws/install/cartographer_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:2703e0c6-ab94-406d-bf22-94140a32f818'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/msg1907/autonomous_driving_ws/build/lidar_driver'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/msg1907/ros2_ws/install/cartographer_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/msg1907/autonomous_driving_ws/install:/home/msg1907/ros2_ws/install/rplidar_ros:/opt/ros/humble:/home/msg1907/ros2_ws/install/my_cartographer:/home/msg1907/ros2_ws/install/cartographer_ros:/home/msg1907/ros2_ws/install/cartographer_ros_msgs:/home/msg1907/ros2_ws/install/cartographer')]), 'shell': False}
+[0.029995] (trio_interface_ros2) JobProgress: {'identifier': 'trio_interface_ros2', 'progress': 'cmake'}
+[0.030947] (trio_interface_ros2) Command: {'cmd': ['/usr/bin/cmake', '/home/msg1907/autonomous_driving_ws/src/hardware/trio_interface_ros2', '-DCMAKE_INSTALL_PREFIX=/home/msg1907/autonomous_driving_ws/install'], 'cwd': '/home/msg1907/autonomous_driving_ws/build/trio_interface_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'msg1907'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/msg1907/ros2_ws/install/my_cartographer/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/msg1907/ros2_ws/install/cartographer_ros/lib:/home/msg1907/ros2_ws/install/cartographer_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('HOME', '/home/msg1907'), ('OLDPWD', '/home/msg1907'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '2287'), ('SYSTEMD_EXEC_PID', '2456'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3011'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/msg1907/autonomous_driving_ws/install:/home/msg1907/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'msg1907'), ('JOURNAL_STREAM', '8:48061'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/msg1907/ros2_ws/install/my_cartographer/lib/aarch64-linux-gnu/pkgconfig:/home/msg1907/ros2_ws/install/my_cartographer/lib/pkgconfig:/home/msg1907/ros2_ws/install/cartographer/lib/aarch64-linux-gnu/pkgconfig:/home/msg1907/ros2_ws/install/cartographer/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'msg1907'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/msg1907/ros2_ws/install/cartographer/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/msg1907/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2432,unix/ubuntu:/tmp/.ICE-unix/2432'), ('INVOCATION_ID', 'f757a062dd2c4346afaa0b765ce1e4df'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/msg1907/autonomous_driving_ws/install:/home/msg1907/ros2_ws/install/rplidar_ros:/home/msg1907/ros2_ws/install/cartographer_ros:/home/msg1907/ros2_ws/install/cartographer_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:2703e0c6-ab94-406d-bf22-94140a32f818'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/msg1907/autonomous_driving_ws/build/trio_interface_ros2'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/msg1907/ros2_ws/install/cartographer_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/msg1907/autonomous_driving_ws/install:/home/msg1907/ros2_ws/install/rplidar_ros:/opt/ros/humble:/home/msg1907/ros2_ws/install/my_cartographer:/home/msg1907/ros2_ws/install/cartographer_ros:/home/msg1907/ros2_ws/install/cartographer_ros_msgs:/home/msg1907/ros2_ws/install/cartographer')]), 'shell': False}
+[0.099387] (-) TimerEvent: {}
+[0.127915] (trio_interface_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.128619] (lidar_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199558] (-) TimerEvent: {}
+[0.224273] (trio_interface_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.226117] (lidar_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.239320] (trio_interface_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.240837] (lidar_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299724] (-) TimerEvent: {}
+[0.371158] (lidar_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.371752] (trio_interface_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.394969] (lidar_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.395763] (trio_interface_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.396170] (lidar_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.396706] (trio_interface_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.397038] (lidar_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.398141] (trio_interface_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.399799] (-) TimerEvent: {}
+[0.407628] (lidar_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.408409] (trio_interface_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500010] (-) TimerEvent: {}
+[0.555723] (lidar_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.556580] (trio_interface_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.581322] (lidar_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.582083] (trio_interface_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.582531] (lidar_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.583210] (trio_interface_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.584014] (lidar_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.584780] (trio_interface_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.593003] (lidar_driver) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.593616] (trio_interface_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.600076] (-) TimerEvent: {}
+[0.700629] (-) TimerEvent: {}
+[0.801213] (-) TimerEvent: {}
+[0.892642] (trio_interface_ros2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.893144] (lidar_driver) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.901316] (-) TimerEvent: {}
+[1.001872] (-) TimerEvent: {}
+[1.101956] (trio_interface_ros2) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.102404] (-) TimerEvent: {}
+[1.187951] (trio_interface_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.195831] (trio_interface_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.202564] (-) TimerEvent: {}
+[1.208290] (lidar_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.209181] (trio_interface_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.216475] (lidar_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[1.221292] (lidar_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/msg1907/autonomous_driving_ws/build/lidar_driver\n'}
+[1.228987] (trio_interface_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.232494] (lidar_driver) CommandEnded: {'returncode': 0}
+[1.234135] (lidar_driver) JobProgress: {'identifier': 'lidar_driver', 'progress': 'build'}
+[1.235775] (lidar_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/msg1907/autonomous_driving_ws/build/lidar_driver', '--', '-j8', '-l8'], 'cwd': '/home/msg1907/autonomous_driving_ws/build/lidar_driver', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'msg1907'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/msg1907/ros2_ws/install/my_cartographer/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/msg1907/ros2_ws/install/cartographer_ros/lib:/home/msg1907/ros2_ws/install/cartographer_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('HOME', '/home/msg1907'), ('OLDPWD', '/home/msg1907'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '2287'), ('SYSTEMD_EXEC_PID', '2456'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3011'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/msg1907/autonomous_driving_ws/install:/home/msg1907/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'msg1907'), ('JOURNAL_STREAM', '8:48061'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/msg1907/ros2_ws/install/my_cartographer/lib/aarch64-linux-gnu/pkgconfig:/home/msg1907/ros2_ws/install/my_cartographer/lib/pkgconfig:/home/msg1907/ros2_ws/install/cartographer/lib/aarch64-linux-gnu/pkgconfig:/home/msg1907/ros2_ws/install/cartographer/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'msg1907'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/msg1907/ros2_ws/install/cartographer/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/msg1907/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2432,unix/ubuntu:/tmp/.ICE-unix/2432'), ('INVOCATION_ID', 'f757a062dd2c4346afaa0b765ce1e4df'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/msg1907/autonomous_driving_ws/install:/home/msg1907/ros2_ws/install/rplidar_ros:/home/msg1907/ros2_ws/install/cartographer_ros:/home/msg1907/ros2_ws/install/cartographer_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:2703e0c6-ab94-406d-bf22-94140a32f818'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/msg1907/autonomous_driving_ws/build/lidar_driver'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/msg1907/ros2_ws/install/cartographer_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/msg1907/autonomous_driving_ws/install:/home/msg1907/ros2_ws/install/rplidar_ros:/opt/ros/humble:/home/msg1907/ros2_ws/install/my_cartographer:/home/msg1907/ros2_ws/install/cartographer_ros:/home/msg1907/ros2_ws/install/cartographer_ros_msgs:/home/msg1907/ros2_ws/install/cartographer')]), 'shell': False}
+[1.256409] (trio_interface_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.302804] (lidar_driver) CommandEnded: {'returncode': 0}
+[1.303711] (-) TimerEvent: {}
+[1.304313] (lidar_driver) JobProgress: {'identifier': 'lidar_driver', 'progress': 'install'}
+[1.321897] (lidar_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/msg1907/autonomous_driving_ws/build/lidar_driver'], 'cwd': '/home/msg1907/autonomous_driving_ws/build/lidar_driver', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'msg1907'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/msg1907/ros2_ws/install/my_cartographer/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/msg1907/ros2_ws/install/cartographer_ros/lib:/home/msg1907/ros2_ws/install/cartographer_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('HOME', '/home/msg1907'), ('OLDPWD', '/home/msg1907'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '2287'), ('SYSTEMD_EXEC_PID', '2456'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3011'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/msg1907/autonomous_driving_ws/install:/home/msg1907/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'msg1907'), ('JOURNAL_STREAM', '8:48061'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/msg1907/ros2_ws/install/my_cartographer/lib/aarch64-linux-gnu/pkgconfig:/home/msg1907/ros2_ws/install/my_cartographer/lib/pkgconfig:/home/msg1907/ros2_ws/install/cartographer/lib/aarch64-linux-gnu/pkgconfig:/home/msg1907/ros2_ws/install/cartographer/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'msg1907'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/msg1907/ros2_ws/install/cartographer/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/msg1907/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2432,unix/ubuntu:/tmp/.ICE-unix/2432'), ('INVOCATION_ID', 'f757a062dd2c4346afaa0b765ce1e4df'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/msg1907/autonomous_driving_ws/install:/home/msg1907/ros2_ws/install/rplidar_ros:/home/msg1907/ros2_ws/install/cartographer_ros:/home/msg1907/ros2_ws/install/cartographer_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:2703e0c6-ab94-406d-bf22-94140a32f818'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/msg1907/autonomous_driving_ws/build/lidar_driver'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/msg1907/ros2_ws/install/cartographer_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/msg1907/autonomous_driving_ws/install:/home/msg1907/ros2_ws/install/rplidar_ros:/opt/ros/humble:/home/msg1907/ros2_ws/install/my_cartographer:/home/msg1907/ros2_ws/install/cartographer_ros:/home/msg1907/ros2_ws/install/cartographer_ros_msgs:/home/msg1907/ros2_ws/install/cartographer')]), 'shell': False}
+[1.327440] (trio_interface_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.331763] (trio_interface_ros2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.337457] (lidar_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.337816] (lidar_driver) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/lidar_driver//launch\n'}
+[1.337958] (lidar_driver) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/lidar_driver//launch/rplidar.launch.py\n'}
+[1.338273] (lidar_driver) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/ament_index/resource_index/package_run_dependencies/lidar_driver\n'}
+[1.338561] (lidar_driver) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/ament_index/resource_index/parent_prefix_path/lidar_driver\n'}
+[1.338911] (lidar_driver) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/lidar_driver/environment/ament_prefix_path.sh\n'}
+[1.339131] (lidar_driver) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/lidar_driver/environment/ament_prefix_path.dsv\n'}
+[1.339338] (lidar_driver) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/lidar_driver/environment/path.sh\n'}
+[1.339552] (lidar_driver) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/lidar_driver/environment/path.dsv\n'}
+[1.339766] (lidar_driver) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/lidar_driver/local_setup.bash\n'}
+[1.339990] (lidar_driver) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/lidar_driver/local_setup.sh\n'}
+[1.340223] (lidar_driver) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/lidar_driver/local_setup.zsh\n'}
+[1.340435] (lidar_driver) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/lidar_driver/local_setup.dsv\n'}
+[1.340641] (lidar_driver) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/lidar_driver/package.dsv\n'}
+[1.340920] (lidar_driver) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/ament_index/resource_index/packages/lidar_driver\n'}
+[1.341182] (lidar_driver) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/lidar_driver/cmake/lidar_driverConfig.cmake\n'}
+[1.341356] (lidar_driver) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/lidar_driver/cmake/lidar_driverConfig-version.cmake\n'}
+[1.341555] (lidar_driver) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/lidar_driver/package.xml\n'}
+[1.344772] (lidar_driver) CommandEnded: {'returncode': 0}
+[1.400196] (lidar_driver) JobEnded: {'identifier': 'lidar_driver', 'rc': 0}
+[1.403823] (-) TimerEvent: {}
+[1.502812] (trio_interface_ros2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.503944] (-) TimerEvent: {}
+[1.571580] (trio_interface_ros2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.604081] (-) TimerEvent: {}
+[1.652106] (trio_interface_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.666980] (trio_interface_ros2) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.704259] (-) TimerEvent: {}
+[1.804344] (trio_interface_ros2) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.804860] (-) TimerEvent: {}
+[1.805299] (trio_interface_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.905099] (-) TimerEvent: {}
+[1.944746] (trio_interface_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.948552] (trio_interface_ros2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.005219] (-) TimerEvent: {}
+[2.072955] (trio_interface_ros2) StdoutLine: {'line': b'-- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.105362] (-) TimerEvent: {}
+[2.205981] (-) TimerEvent: {}
+[2.219765] (trio_interface_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.246784] (trio_interface_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[2.256576] (trio_interface_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/msg1907/autonomous_driving_ws/build/trio_interface_ros2\n'}
+[2.277200] (trio_interface_ros2) CommandEnded: {'returncode': 0}
+[2.279090] (trio_interface_ros2) JobProgress: {'identifier': 'trio_interface_ros2', 'progress': 'build'}
+[2.280058] (trio_interface_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/msg1907/autonomous_driving_ws/build/trio_interface_ros2', '--', '-j8', '-l8'], 'cwd': '/home/msg1907/autonomous_driving_ws/build/trio_interface_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'msg1907'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/msg1907/ros2_ws/install/my_cartographer/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/msg1907/ros2_ws/install/cartographer_ros/lib:/home/msg1907/ros2_ws/install/cartographer_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('HOME', '/home/msg1907'), ('OLDPWD', '/home/msg1907'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '2287'), ('SYSTEMD_EXEC_PID', '2456'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3011'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/msg1907/autonomous_driving_ws/install:/home/msg1907/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'msg1907'), ('JOURNAL_STREAM', '8:48061'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/msg1907/ros2_ws/install/my_cartographer/lib/aarch64-linux-gnu/pkgconfig:/home/msg1907/ros2_ws/install/my_cartographer/lib/pkgconfig:/home/msg1907/ros2_ws/install/cartographer/lib/aarch64-linux-gnu/pkgconfig:/home/msg1907/ros2_ws/install/cartographer/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'msg1907'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/msg1907/ros2_ws/install/cartographer/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/msg1907/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2432,unix/ubuntu:/tmp/.ICE-unix/2432'), ('INVOCATION_ID', 'f757a062dd2c4346afaa0b765ce1e4df'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/msg1907/autonomous_driving_ws/install:/home/msg1907/ros2_ws/install/rplidar_ros:/home/msg1907/ros2_ws/install/cartographer_ros:/home/msg1907/ros2_ws/install/cartographer_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:2703e0c6-ab94-406d-bf22-94140a32f818'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/msg1907/autonomous_driving_ws/build/trio_interface_ros2'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/msg1907/ros2_ws/install/cartographer_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/msg1907/autonomous_driving_ws/install:/home/msg1907/ros2_ws/install/rplidar_ros:/opt/ros/humble:/home/msg1907/ros2_ws/install/my_cartographer:/home/msg1907/ros2_ws/install/cartographer_ros:/home/msg1907/ros2_ws/install/cartographer_ros_msgs:/home/msg1907/ros2_ws/install/cartographer')]), 'shell': False}
+[2.306122] (-) TimerEvent: {}
+[2.377459] (trio_interface_ros2) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/trio_tcp_lib.dir/src/fsm_trio_motion_node.cpp.o\x1b[0m\n'}
+[2.377963] (trio_interface_ros2) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/trio_tcp_lib.dir/src/cmd_trio_motion_node.cpp.o\x1b[0m\n'}
+[2.378118] (trio_interface_ros2) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/trio_tcp_lib.dir/src/cmd_trio_motion_tcp.cpp.o\x1b[0m\n'}
+[2.378264] (trio_interface_ros2) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/trio_tcp_lib.dir/src/fsm_trio_motion_tcp.cpp.o\x1b[0m\n'}
+[2.406317] (-) TimerEvent: {}
+[2.506990] (-) TimerEvent: {}
+[2.607632] (-) TimerEvent: {}
+[2.708260] (-) TimerEvent: {}
+[2.808914] (-) TimerEvent: {}
+[2.909557] (-) TimerEvent: {}
+[3.010216] (-) TimerEvent: {}
+[3.110904] (-) TimerEvent: {}
+[3.211597] (-) TimerEvent: {}
+[3.312270] (-) TimerEvent: {}
+[3.412922] (-) TimerEvent: {}
+[3.513573] (-) TimerEvent: {}
+[3.614239] (-) TimerEvent: {}
+[3.714908] (-) TimerEvent: {}
+[3.815576] (-) TimerEvent: {}
+[3.916235] (-) TimerEvent: {}
+[4.016936] (-) TimerEvent: {}
+[4.117756] (-) TimerEvent: {}
+[4.218421] (-) TimerEvent: {}
+[4.319121] (-) TimerEvent: {}
+[4.419774] (-) TimerEvent: {}
+[4.520424] (-) TimerEvent: {}
+[4.621092] (-) TimerEvent: {}
+[4.721752] (-) TimerEvent: {}
+[4.822408] (-) TimerEvent: {}
+[4.923090] (-) TimerEvent: {}
+[5.023762] (-) TimerEvent: {}
+[5.124466] (-) TimerEvent: {}
+[5.225164] (-) TimerEvent: {}
+[5.325839] (-) TimerEvent: {}
+[5.426512] (-) TimerEvent: {}
+[5.527191] (-) TimerEvent: {}
+[5.627850] (-) TimerEvent: {}
+[5.728510] (-) TimerEvent: {}
+[5.829168] (-) TimerEvent: {}
+[5.929815] (-) TimerEvent: {}
+[6.030456] (-) TimerEvent: {}
+[6.131120] (-) TimerEvent: {}
+[6.231768] (-) TimerEvent: {}
+[6.332420] (-) TimerEvent: {}
+[6.433126] (-) TimerEvent: {}
+[6.533877] (-) TimerEvent: {}
+[6.634535] (-) TimerEvent: {}
+[6.735226] (-) TimerEvent: {}
+[6.835873] (-) TimerEvent: {}
+[6.936527] (-) TimerEvent: {}
+[7.037190] (-) TimerEvent: {}
+[7.137844] (-) TimerEvent: {}
+[7.238519] (-) TimerEvent: {}
+[7.339240] (-) TimerEvent: {}
+[7.439917] (-) TimerEvent: {}
+[7.540575] (-) TimerEvent: {}
+[7.641252] (-) TimerEvent: {}
+[7.741914] (-) TimerEvent: {}
+[7.842584] (-) TimerEvent: {}
+[7.943284] (-) TimerEvent: {}
+[8.043944] (-) TimerEvent: {}
+[8.144613] (-) TimerEvent: {}
+[8.245254] (-) TimerEvent: {}
+[8.345892] (-) TimerEvent: {}
+[8.446511] (-) TimerEvent: {}
+[8.547163] (-) TimerEvent: {}
+[8.647794] (-) TimerEvent: {}
+[8.748411] (-) TimerEvent: {}
+[8.849029] (-) TimerEvent: {}
+[8.949680] (-) TimerEvent: {}
+[9.050319] (-) TimerEvent: {}
+[9.150921] (-) TimerEvent: {}
+[9.251515] (-) TimerEvent: {}
+[9.352128] (-) TimerEvent: {}
+[9.452733] (-) TimerEvent: {}
+[9.553332] (-) TimerEvent: {}
+[9.653930] (-) TimerEvent: {}
+[9.754521] (-) TimerEvent: {}
+[9.855166] (-) TimerEvent: {}
+[9.955785] (-) TimerEvent: {}
+[10.056385] (-) TimerEvent: {}
+[10.156986] (-) TimerEvent: {}
+[10.257624] (-) TimerEvent: {}
+[10.358255] (-) TimerEvent: {}
+[10.458903] (-) TimerEvent: {}
+[10.559542] (-) TimerEvent: {}
+[10.660192] (-) TimerEvent: {}
+[10.760831] (-) TimerEvent: {}
+[10.861481] (-) TimerEvent: {}
+[10.962137] (-) TimerEvent: {}
+[11.062792] (-) TimerEvent: {}
+[11.163417] (-) TimerEvent: {}
+[11.264025] (-) TimerEvent: {}
+[11.364638] (-) TimerEvent: {}
+[11.465488] (-) TimerEvent: {}
+[11.566418] (-) TimerEvent: {}
+[11.667092] (-) TimerEvent: {}
+[11.767951] (-) TimerEvent: {}
+[11.868619] (-) TimerEvent: {}
+[11.969289] (-) TimerEvent: {}
+[12.069923] (-) TimerEvent: {}
+[12.170535] (-) TimerEvent: {}
+[12.271163] (-) TimerEvent: {}
+[12.371777] (-) TimerEvent: {}
+[12.472415] (-) TimerEvent: {}
+[12.573057] (-) TimerEvent: {}
+[12.673916] (-) TimerEvent: {}
+[12.774565] (-) TimerEvent: {}
+[12.875202] (-) TimerEvent: {}
+[12.975783] (-) TimerEvent: {}
+[13.076372] (-) TimerEvent: {}
+[13.176963] (-) TimerEvent: {}
+[13.277558] (-) TimerEvent: {}
+[13.378165] (-) TimerEvent: {}
+[13.478803] (-) TimerEvent: {}
+[13.579417] (-) TimerEvent: {}
+[13.680026] (-) TimerEvent: {}
+[13.780632] (-) TimerEvent: {}
+[13.881227] (-) TimerEvent: {}
+[13.981803] (-) TimerEvent: {}
+[14.082370] (-) TimerEvent: {}
+[14.182963] (-) TimerEvent: {}
+[14.283536] (-) TimerEvent: {}
+[14.384152] (-) TimerEvent: {}
+[14.484732] (-) TimerEvent: {}
+[14.585321] (-) TimerEvent: {}
+[14.685905] (-) TimerEvent: {}
+[14.786487] (-) TimerEvent: {}
+[14.887089] (-) TimerEvent: {}
+[14.987666] (-) TimerEvent: {}
+[15.088236] (-) TimerEvent: {}
+[15.188810] (-) TimerEvent: {}
+[15.289380] (-) TimerEvent: {}
+[15.389944] (-) TimerEvent: {}
+[15.490531] (-) TimerEvent: {}
+[15.591157] (-) TimerEvent: {}
+[15.691745] (-) TimerEvent: {}
+[15.792337] (-) TimerEvent: {}
+[15.892930] (-) TimerEvent: {}
+[15.993503] (-) TimerEvent: {}
+[16.094067] (-) TimerEvent: {}
+[16.194638] (-) TimerEvent: {}
+[16.295249] (-) TimerEvent: {}
+[16.395805] (-) TimerEvent: {}
+[16.496382] (-) TimerEvent: {}
+[16.596963] (-) TimerEvent: {}
+[16.697542] (-) TimerEvent: {}
+[16.798126] (-) TimerEvent: {}
+[16.898708] (-) TimerEvent: {}
+[16.999314] (-) TimerEvent: {}
+[17.099897] (-) TimerEvent: {}
+[17.200525] (-) TimerEvent: {}
+[17.301337] (-) TimerEvent: {}
+[17.402110] (-) TimerEvent: {}
+[17.502923] (-) TimerEvent: {}
+[17.603719] (-) TimerEvent: {}
+[17.704522] (-) TimerEvent: {}
+[17.805330] (-) TimerEvent: {}
+[17.906125] (-) TimerEvent: {}
+[18.006945] (-) TimerEvent: {}
+[18.107739] (-) TimerEvent: {}
+[18.208558] (-) TimerEvent: {}
+[18.274225] (trio_interface_ros2) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX static library libtrio_tcp_lib.a\x1b[0m\n'}
+[18.308758] (-) TimerEvent: {}
+[18.409518] (-) TimerEvent: {}
+[18.510237] (-) TimerEvent: {}
+[18.563248] (trio_interface_ros2) StdoutLine: {'line': b'[ 55%] Built target trio_tcp_lib\n'}
+[18.603487] (trio_interface_ros2) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/fsm_trio_main.dir/src/fsm_trio_main.cpp.o\x1b[0m\n'}
+[18.604004] (trio_interface_ros2) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/cmd_trio_main.dir/src/cmd_trio_main.cpp.o\x1b[0m\n'}
+[18.610383] (-) TimerEvent: {}
+[18.711010] (-) TimerEvent: {}
+[18.811644] (-) TimerEvent: {}
+[18.912285] (-) TimerEvent: {}
+[19.012922] (-) TimerEvent: {}
+[19.113570] (-) TimerEvent: {}
+[19.214217] (-) TimerEvent: {}
+[19.314903] (-) TimerEvent: {}
+[19.415543] (-) TimerEvent: {}
+[19.516189] (-) TimerEvent: {}
+[19.616833] (-) TimerEvent: {}
+[19.717485] (-) TimerEvent: {}
+[19.818123] (-) TimerEvent: {}
+[19.918783] (-) TimerEvent: {}
+[20.019430] (-) TimerEvent: {}
+[20.120069] (-) TimerEvent: {}
+[20.220711] (-) TimerEvent: {}
+[20.321347] (-) TimerEvent: {}
+[20.421978] (-) TimerEvent: {}
+[20.522616] (-) TimerEvent: {}
+[20.623280] (-) TimerEvent: {}
+[20.723930] (-) TimerEvent: {}
+[20.824588] (-) TimerEvent: {}
+[20.925266] (-) TimerEvent: {}
+[21.025923] (-) TimerEvent: {}
+[21.126575] (-) TimerEvent: {}
+[21.227247] (-) TimerEvent: {}
+[21.327905] (-) TimerEvent: {}
+[21.428555] (-) TimerEvent: {}
+[21.529216] (-) TimerEvent: {}
+[21.630000] (-) TimerEvent: {}
+[21.730645] (-) TimerEvent: {}
+[21.831321] (-) TimerEvent: {}
+[21.931970] (-) TimerEvent: {}
+[22.032644] (-) TimerEvent: {}
+[22.133523] (-) TimerEvent: {}
+[22.234170] (-) TimerEvent: {}
+[22.334863] (-) TimerEvent: {}
+[22.435525] (-) TimerEvent: {}
+[22.536185] (-) TimerEvent: {}
+[22.636837] (-) TimerEvent: {}
+[22.737444] (-) TimerEvent: {}
+[22.838036] (-) TimerEvent: {}
+[22.938721] (-) TimerEvent: {}
+[23.039430] (-) TimerEvent: {}
+[23.140082] (-) TimerEvent: {}
+[23.240742] (-) TimerEvent: {}
+[23.341392] (-) TimerEvent: {}
+[23.442040] (-) TimerEvent: {}
+[23.542717] (-) TimerEvent: {}
+[23.643396] (-) TimerEvent: {}
+[23.744051] (-) TimerEvent: {}
+[23.844742] (-) TimerEvent: {}
+[23.945419] (-) TimerEvent: {}
+[24.046079] (-) TimerEvent: {}
+[24.146712] (-) TimerEvent: {}
+[24.164769] (trio_interface_ros2) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX executable fsm_trio_main\x1b[0m\n'}
+[24.246887] (-) TimerEvent: {}
+[24.347550] (-) TimerEvent: {}
+[24.400338] (trio_interface_ros2) StdoutLine: {'line': b'[ 88%] Built target fsm_trio_main\n'}
+[24.447720] (-) TimerEvent: {}
+[24.460025] (trio_interface_ros2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable cmd_trio_main\x1b[0m\n'}
+[24.547914] (-) TimerEvent: {}
+[24.648711] (-) TimerEvent: {}
+[24.749552] (-) TimerEvent: {}
+[24.850328] (-) TimerEvent: {}
+[24.951123] (-) TimerEvent: {}
+[25.051890] (-) TimerEvent: {}
+[25.152630] (-) TimerEvent: {}
+[25.153140] (trio_interface_ros2) StdoutLine: {'line': b'[100%] Built target cmd_trio_main\n'}
+[25.178053] (trio_interface_ros2) CommandEnded: {'returncode': 0}
+[25.180775] (trio_interface_ros2) JobProgress: {'identifier': 'trio_interface_ros2', 'progress': 'install'}
+[25.181659] (trio_interface_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/msg1907/autonomous_driving_ws/build/trio_interface_ros2'], 'cwd': '/home/msg1907/autonomous_driving_ws/build/trio_interface_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'msg1907'), ('LC_TIME', 'ko_KR.UTF-8'), ('ROS_PACKAGE_PATH', '/home/msg1907/ros2_ws/install/my_cartographer/share'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/msg1907/ros2_ws/install/cartographer_ros/lib:/home/msg1907/ros2_ws/install/cartographer_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('HOME', '/home/msg1907'), ('OLDPWD', '/home/msg1907'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '2287'), ('SYSTEMD_EXEC_PID', '2456'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3011'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/msg1907/autonomous_driving_ws/install:/home/msg1907/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'msg1907'), ('JOURNAL_STREAM', '8:48061'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/msg1907/ros2_ws/install/my_cartographer/lib/aarch64-linux-gnu/pkgconfig:/home/msg1907/ros2_ws/install/my_cartographer/lib/pkgconfig:/home/msg1907/ros2_ws/install/cartographer/lib/aarch64-linux-gnu/pkgconfig:/home/msg1907/ros2_ws/install/cartographer/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'msg1907'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/msg1907/ros2_ws/install/cartographer/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/msg1907/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2432,unix/ubuntu:/tmp/.ICE-unix/2432'), ('INVOCATION_ID', 'f757a062dd2c4346afaa0b765ce1e4df'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/msg1907/autonomous_driving_ws/install:/home/msg1907/ros2_ws/install/rplidar_ros:/home/msg1907/ros2_ws/install/cartographer_ros:/home/msg1907/ros2_ws/install/cartographer_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:2703e0c6-ab94-406d-bf22-94140a32f818'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/msg1907/autonomous_driving_ws/build/trio_interface_ros2'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/msg1907/ros2_ws/install/cartographer_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/msg1907/autonomous_driving_ws/install:/home/msg1907/ros2_ws/install/rplidar_ros:/opt/ros/humble:/home/msg1907/ros2_ws/install/my_cartographer:/home/msg1907/ros2_ws/install/cartographer_ros:/home/msg1907/ros2_ws/install/cartographer_ros_msgs:/home/msg1907/ros2_ws/install/cartographer')]), 'shell': False}
+[25.200332] (trio_interface_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[25.200809] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/lib/trio_interface_ros2/cmd_trio_main\n'}
+[25.207715] (trio_interface_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/msg1907/autonomous_driving_ws/install/lib/trio_interface_ros2/cmd_trio_main" to ""\n'}
+[25.207979] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/lib/trio_interface_ros2/fsm_trio_main\n'}
+[25.208723] (trio_interface_ros2) StdoutLine: {'line': b'-- Set runtime path of "/home/msg1907/autonomous_driving_ws/install/lib/trio_interface_ros2/fsm_trio_main" to ""\n'}
+[25.208950] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/include/\n'}
+[25.209214] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/include//trio_interface_ros2\n'}
+[25.209426] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/include//trio_interface_ros2/fsm_trio_motion_node.hpp\n'}
+[25.209659] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/include//trio_interface_ros2/cmd_trio_motion_node.hpp\n'}
+[25.209860] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/include//trio_interface_ros2/cmd_trio_motion_tcp.hpp\n'}
+[25.210064] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/include//trio_interface_ros2/fsm_trio_motion_tcp.hpp\n'}
+[25.210310] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/trio_interface_ros2//launch\n'}
+[25.210521] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/trio_interface_ros2//launch/trio_interface.launch.py\n'}
+[25.210692] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/ament_index/resource_index/package_run_dependencies/trio_interface_ros2\n'}
+[25.210993] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/ament_index/resource_index/parent_prefix_path/trio_interface_ros2\n'}
+[25.211279] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/trio_interface_ros2/environment/ament_prefix_path.sh\n'}
+[25.211516] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/trio_interface_ros2/environment/ament_prefix_path.dsv\n'}
+[25.211755] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/trio_interface_ros2/environment/path.sh\n'}
+[25.211994] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/trio_interface_ros2/environment/path.dsv\n'}
+[25.212228] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/trio_interface_ros2/local_setup.bash\n'}
+[25.212462] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/trio_interface_ros2/local_setup.sh\n'}
+[25.212714] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/trio_interface_ros2/local_setup.zsh\n'}
+[25.212955] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/trio_interface_ros2/local_setup.dsv\n'}
+[25.213220] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/trio_interface_ros2/package.dsv\n'}
+[25.213451] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/ament_index/resource_index/packages/trio_interface_ros2\n'}
+[25.213637] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/trio_interface_ros2/cmake/trio_interface_ros2Config.cmake\n'}
+[25.213818] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/trio_interface_ros2/cmake/trio_interface_ros2Config-version.cmake\n'}
+[25.213998] (trio_interface_ros2) StdoutLine: {'line': b'-- Installing: /home/msg1907/autonomous_driving_ws/install/share/trio_interface_ros2/package.xml\n'}
+[25.217283] (trio_interface_ros2) CommandEnded: {'returncode': 0}
+[25.253204] (-) TimerEvent: {}
+[25.263755] (trio_interface_ros2) JobEnded: {'identifier': 'trio_interface_ros2', 'rc': 0}
+[25.265842] (-) EventReactorShutdown: {}
